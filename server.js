@@ -1,9 +1,6 @@
 //  empty JS object to act as DB for all routes
 WebsiteData = {};
 
-// dotenv 
-require('dotenv').config();
-
 
 // Require Express to run server and routes
 const express = require("express");
@@ -32,7 +29,7 @@ app.use(express.static("website"));
 
 
 // set the port number
-const port = process.env.Port;
+const port = 8000;
 
 const server = app.listen(port, listening);
 
