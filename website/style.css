@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400&family=Josefin+Sans:wght@700&family=Overpass:wght@400&display=swap");
+
+/* General Styling */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0 10%;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 33px;
+  color: #221e1d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #221e1d;
+  text-align: center;
+}
+
+input, textarea {
+  display: block;
+  width: 80%;
+  height: 32px;
+  margin: 10px auto;
+  padding: 5px;
+  font-size: 16px;
+  font-family: "Overpass", sans-serif;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  color: #000;
+  text-align: center;
+}
+
+textarea {
+  height: 80px;
+  font-size: 15px;
+  color: dimgrey;
+}
+
+button {
+  width: 300px;
+  height: 50px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 10px;
+  background: #3b4873;
+  color: aliceblue;
+  font-size: 23px;
+  font-family: "Overpass", sans-serif;
+  box-shadow: 2px 4px 5px #444;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2d3859;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  border-color: #3b4873;
+}
+
+/* Layout Styling */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    "hd"
+    "zip"
+    "feeling"
+    "add"
+    "entry";
+  gap: 1em;
+}
+
+.headline {
+  grid-area: hd;
+  text-align: center;
+}
+
+.zip {
+  grid-area: zip;
+}
+
+.feel {
+  grid-area: feeling;
+}
+
+.generate-button {
+  grid-area: add;
+  text-align: center;
+}
+
+.entry {
+  grid-area: entry;
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3), 9px 11px 11px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+#entryHolder {
+  color: black;
+}
+
+#date, #temp, #contentry {
+  color: firebrick;
+  font-weight: bold;
+}
+
+/* App Styling */
+#app {
+  margin: 30px auto;
+  padding: 2rem 1.25rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.3), 9px 11px 11px rgba(0, 0, 0, 0.4);
+  font-family: "Hind Siliguri", sans-serif;
+  font-size: 20px;
+  line-height: 2.5em;
+}
